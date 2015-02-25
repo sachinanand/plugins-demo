@@ -8,7 +8,7 @@ class MailerJob {
     CustomMailService customMailService
 
     static triggers = {
-        cron name: 'myTrigger', cronExpression: "0 0/1 * 1/1 * ? *" // send email every 1 minute
+//        cron name: 'myTrigger', cronExpression: "0 0/1 * 1/1 * ? *" // send email every 1 minute
         
     }
 
