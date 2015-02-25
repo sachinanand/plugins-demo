@@ -4,7 +4,7 @@ class DummyController {
 
     def mailService
     def index() {
-
+        MailerJob.triggerNow()
         // send a mail basic functionality
 
     }
