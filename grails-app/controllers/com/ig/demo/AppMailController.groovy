@@ -1,11 +1,11 @@
 package com.ig.demo
 
 class AppMailController {
-    def mailService
+    def asynchronousMailService
 
     def sendFormalMail(params) {
         println("sendFormalMail..")
-        mailService.sendMail {
+        asynchronousMailService.sendMail {
             to "${params.email}"
             subject "${params.subject}"
             body "${params.body}"
@@ -18,7 +18,7 @@ class AppMailController {
         def emailId = params.email
         def subjectText = params.subject
 
-        mailService.sendMail {
+        asynchronousMailService.sendMail {
             to "${emailId}"
             subject "${subjectText}"
             html g.render(template:"myMailTemplate")
