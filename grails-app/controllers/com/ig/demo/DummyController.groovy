@@ -7,16 +7,16 @@ class DummyController {
 
         // send a mail basic functionality
         mailService.sendMail {
-            to "sachin@intelligrape.com"
-            subject "Hello Sachin"
+            to "mithu.das@intelligrape.com"
+            subject "Hello Mithu"
             body 'How are you?'
         }
     }
 
     def sendMailFromTemplate(){
         mailService.sendMail {
-            to "sachin@intelligrape.com"
-            subject "Hello Sachin"
+            to "mithu.das@intelligrape.com"
+            subject "Hello Mithu"
             html g.render(template:"myMailTemplate")
         }
     }
